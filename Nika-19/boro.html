@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Boro — A Special Message</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@300;400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#f5ead7;
+
+color:#352c25;
+
+font-family:'Montserrat',sans-serif;
+
+overflow-x:hidden;
+
+}
+
+.page{
+
+max-width:390px;
+
+margin:auto;
+
+position:relative;
+
+overflow:hidden;
+
+min-height:100vh;
+
+}
+
+/* ---------- DECOR ---------- */
+
+.sun-one{
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:#f4c66e;
+
+border-radius:50%;
+
+right:-150px;
+
+top:-80px;
+
+opacity:.45;
+
+filter:blur(25px);
+
+}
+
+.sun-two{
+
+position:absolute;
+
+width:240px;
+
+height:240px;
+
+background:#edb09b;
+
+border-radius:50%;
+
+left:-130px;
+
+top:520px;
+
+opacity:.35;
+
+filter:blur(35px);
+
+}
+
+.circle{
+
+position:absolute;
+
+width:200px;
+
+height:200px;
+
+border-radius:50%;
+
+border:1px solid rgba(185,145,80,.35);
+
+left:-100px;
+
+top:390px;
+
+}
+
+.small-line{
+
+position:absolute;
+
+width:100px;
+
+height:1px;
+
+background:#c8a56a;
+
+right:25px;
+
+top:650px;
+
+}
+
+/* ---------- COVER ---------- */
+
+.cover{
+
+padding:25px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.top{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:8px;
+
+letter-spacing:5px;
+
+color:#8d7659;
+
+}
+
+.main-photo{
+
+margin-top:45px;
+
+height:450px;
+
+position:relative;
+
+}
+
+.main-photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+border-radius:45px;
+
+}
+
+.main-photo::after{
+
+content:"";
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+border:1px solid #c7a86d;
+
+left:12px;
+
+top:12px;
+
+border-radius:45px;
+
+z-index:-1;
+
+}
+
+.edition{
+
+position:absolute;
+
+right:20px;
+
+top:500px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:100px;
+
+color:rgba(170,130,70,.15);
+
+}
+
+.name{
+
+margin-top:50px;
+
+text-align:center;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:55px;
+
+font-weight:300;
+
+letter-spacing:10px;
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+text-align:center;
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#92795b;
+
+}
+
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#c7a86d;
+
+margin:40px auto;
+
+}
+
+/* ---------- MESSAGE ---------- */
+
+.message{
+
+padding:0 28px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.label{
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#92795b;
+
+}
+
+.title{
+
+margin-top:20px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:45px;
+
+font-weight:300;
+
+line-height:1;
+
+}
+
+.text{
+
+margin-top:35px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:18px;
+
+line-height:1.85;
+
+}
+
+.text p{
+
+margin-bottom:22px;
+
+}
+
+.quote{
+
+margin-top:45px;
+
+padding:30px 0;
+
+border-top:1px solid rgba(170,130,70,.3);
+
+border-bottom:1px solid rgba(170,130,70,.3);
+
+font-family:'Bodoni Moda',serif;
+
+font-size:30px;
+
+line-height:1.3;
+
+color:#b17c43;
+
+}
+
+/* ---------- GALLERY ---------- */
+
+.gallery{
+
+margin-top:80px;
+
+padding:0 25px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:35px;
+
+margin-bottom:25px;
+
+}
+
+.gallery img:nth-child(2){
+
+width:75%;
+
+height:220px;
+
+margin-left:auto;
+
+display:block;
+
+}
+
+/* ---------- END ---------- */
+
+.end{
+
+margin:70px 25px;
+
+text-align:center;
+
+}
+
+.end h2{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:40px;
+
+font-weight:300;
+
+line-height:1.2;
+
+}
+
+.end span{
+
+color:#c18b4d;
+
+}
+
+.back{
+
+display:block;
+
+margin-top:35px;
+
+padding:18px;
+
+border-radius:30px;
+
+background:#e8c98b;
+
+color:#352c25;
+
+text-decoration:none;
+
+font-size:10px;
+
+letter-spacing:4px;
+
+}
+
+.footer{
+
+margin:50px 0;
+
+text-align:center;
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#8d7659;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="sun-one"></div>
+
+<div class="sun-two"></div>
+
+<div class="circle"></div>
+
+<div class="small-line"></div>
+
+<section class="cover">
+
+<div class="top">
+
+<span>NIKA'S EDITION</span>
+
+<span>A SPECIAL MESSAGE</span>
+
+</div>
+
+<div class="main-photo">
+
+<img src="images/boro-main.jpg">
+
+</div>
+
+<div class="edition">
+
+01
+
+</div>
+
+<h1 class="name">
+
+БОРО
+
+</h1>
+
+<div class="subtitle">
+
+CHAPTER 01 · FOR NIKA
+
+<
+
+
+v class="divider"></div>
+
+</section>
+
+<section class="message">
+
+<div class="label">
+
+A LITTLE STORY
+
+</div>
+
+<h2 class="title">
+
+FROM
+
+BORO
+
+</h2>
+
+<div class="text">
+
+<p>
+Дорогая Никочка!
+</p>
+
+<p>
+С днём рождения! Я невероятно рада, что в моей жизни есть ты. Ты — это редкое сочетание огромного доброго сердца, невероятной энергии и потрясающего чувства юмора.
+</p>
+
+<p>
+Спасибо тебе за твою поддержку, искренность и за то, что рядом с тобой любой день становится ярче и веселее.
+</p>
+
+<p>
+Желаю тебе всегда оставаться такой же настоящей, смелой и удивительной. Пусть впереди будет много счастливых моментов, новых побед и людей, которые будут ценить тебя так же сильно, как мы.
+</p>
+
+</div>
+
+<div class="quote">
+
+SUNSHINE
+
+IN HUMAN FORM
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<img src="images/boro-photo2.jpg">
+
+<img src="images/boro-photo3.jpg">
+
+</section>
+
+<section class="end">
+
+<h2>
+
+WITH
+
+<span>LOVE, BORO</span>
+
+</h2>
+
+<a href="index.html" class="back">
+
+BACK TO NIKA
+
+</a>
+
+</section>
+
+<div class="footer">
+
+VERONIKA VLASOVA · 19 EDITION
+
+</div>
+
+</div>
+
+</body>
+
+</html>
