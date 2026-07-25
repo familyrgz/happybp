@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dasha — A Special Message</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@300;400;500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#0d0d0f;
+
+color:#f4f0ed;
+
+font-family:'Montserrat',sans-serif;
+
+overflow-x:hidden;
+
+}
+
+.page{
+
+width:100%;
+
+max-width:390px;
+
+margin:auto;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* ---------- DARK DECOR ---------- */
+
+.red-blur{
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:#641c2a;
+
+border-radius:50%;
+
+right:-150px;
+
+top:100px;
+
+filter:blur(50px);
+
+opacity:.7;
+
+}
+
+.gray-blur{
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+background:#38343a;
+
+border-radius:50%;
+
+left:-140px;
+
+top:600px;
+
+filter:blur(50px);
+
+}
+
+.circle{
+
+position:absolute;
+
+width:210px;
+
+height:210px;
+
+border-radius:50%;
+
+border:1px solid rgba(255,255,255,.15);
+
+right:-100px;
+
+top:430px;
+
+}
+
+.line{
+
+position:absolute;
+
+height:1px;
+
+width:120px;
+
+background:#b8a4a8;
+
+left:25px;
+
+top:680px;
+
+}
+
+/* ---------- COVER ---------- */
+
+.cover{
+
+padding:25px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.top{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:8px;
+
+letter-spacing:5px;
+
+color:#aaa3a5;
+
+}
+
+.photo-area{
+
+height:430px;
+
+margin-top:50px;
+
+position:relative;
+
+}
+
+.photo-left{
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+left:-55px;
+
+top:20px;
+
+}
+
+.photo-right{
+
+position:absolute;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+right:-35px;
+
+bottom:0;
+
+}
+
+.photo-area img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.number{
+
+position:absolute;
+
+bottom:40px;
+
+left:110px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:120px;
+
+color:rgba(255,255,255,.08);
+
+}
+
+.name{
+
+margin-top:45px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:60px;
+
+font-weight:300;
+
+letter-spacing:8px;
+
+text-align:center;
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+text-align:center;
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#aaa3a5;
+
+}
+
+.divider{
+
+width:90px;
+
+height:1px;
+
+background:#8f777d;
+
+margin:40px auto;
+
+}
+
+/* ---------- MESSAGE ---------- */
+
+.message{
+
+padding:0 28px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.label{
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#b7a2a7;
+
+}
+
+.title{
+
+margin-top:20px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:48px;
+
+font-weight:300;
+
+line-height:1;
+
+}
+
+.text{
+
+margin-top:35px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.text p{
+
+margin-bottom:24px;
+
+}
+
+.quote{
+
+margin-top:45px;
+
+padding:30px 0;
+
+border-top:1px solid rgba(255,255,255,.2);
+
+border-bottom:1px solid rgba(255,255,255,.2);
+
+font-family:'Bodoni Moda',serif;
+
+font-size:30px;
+
+color:#d28a98;
+
+}
+
+/* ---------- END ---------- */
+
+.end{
+
+margin:80px 25px;
+
+text-align:center;
+
+}
+
+.end img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:35px;
+
+}
+
+.end h2{
+
+margin-top:40px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:40px;
+
+font-weight:300;
+
+}
+
+.end span{
+
+color:#d28a98;
+
+}
+
+.back{
+
+display:block;
+
+margin-top:35px;
+
+padding:18px;
+
+border-radius:30px;
+
+background:#222126;
+
+border:1px solid #62565a;
+
+text-decoration:none;
+
+color:white;
+
+font-size:10px;
+
+letter-spacing:4px;
+
+}
+
+.footer{
+
+margin:50px 0;
+
+text-align:center;
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#8f898b;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="red-blur"></div>
+
+<div class="gray-blur"></div>
+
+<div class="circle"></div>
+
+<div class="line"></div>
+
+<section class="cover">
+
+<div class="top">
+
+<span>NIKA'S EDITION</span>
+
+<span>A SPECIAL MESSAGE</span>
+
+</div>
+
+<div class="photo-area">
+
+<div class="photo-left">
+
+<img src="images/dasha-main.jpg">
+
+</div>
+
+<div class="photo-right">
+
+<img src="images/dasha-photo2.jpg">
+
+</div>
+
+<div class="number">
+
+03
+
+</div>
+
+</div>
+
+<h1 class="name">
+
+ДАША
+
+</h1>
+
+<div class="subtitle">
+
+CHAPTER 03 · FOR NIKA
+
+</div>
+
+<div class="divider"></div>
+
+</section>
+
+<section class=
+
+
+age">
+
+<div class="label">
+
+A LETTER
+
+</div>
+
+<h2 class="title">
+
+FROM
+
+DASHA
+
+</h2>
+
+<div class="text">
+
+<p>
+Дорогая Никочка (а ещё Илья Муромец и Егор Власов), с днём рождения!!
+</p>
+
+<p>
+Я с первых дней поняла что мы подружимся, наша неспособность принимать решения и делать дз по медведу скрепила наш союз прекрасно.
+</p>
+
+<p>
+Я искренне восхищаюсь твоим словарным запасом (особенно стихотворение про кладбИще) и стилем общения!!
+</p>
+
+<p>
+Расти большой, не будь лапшой, кайфуй, прогуливай медведа и радуйся жизни, а мы будем рядом!!
+</p>
+
+</div>
+
+<div class="quote">
+
+STAY CONFIDENT<br
+NFORGETTABLE
+
+</div>
+
+</section>
+
+<section class="end">
+
+<img src="images/dasha-photo3.jpg">
+
+<h2>
+
+WITH<br
+span>LOVE, DASHA</span>
+
+</h2>
+
+<a href="index.html" class="back">
+
+BACK TO NIKA
+
+</a>
+
+</section>
+
+<div class="footer">
+
+VERONIKA VLASOVA · 19 EDITION
+
+</div>
+
+</div>
+
+</body>
+
+</html>"mess

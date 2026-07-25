@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANNA — SCARLET NOIR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#050505;
+color:#f5f5f5;
+font-family:'Montserrat',sans-serif;
+overflow-x:hidden;
+
+}
+
+.page{
+
+width:100%;
+max-width:390px;
+margin:auto;
+position:relative;
+overflow:hidden;
+
+}
+
+/* ---------- BACKGROUND ---------- */
+
+.red-stroke{
+
+position:absolute;
+
+width:260px;
+height:40px;
+
+background:#850018;
+
+top:260px;
+right:-120px;
+
+transform:rotate(-25deg);
+
+opacity:.35;
+
+}
+
+.red-square{
+
+position:absolute;
+
+width:180px;
+height:180px;
+
+border:1px solid rgba(140,0,25,.5);
+
+left:-90px;
+
+top:650px;
+
+transform:rotate(45deg);
+
+}
+
+.texture{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+120deg,
+transparent 40%,
+rgba(255,0,40,.04),
+transparent 60%
+);
+
+}
+
+/* ---------- COVER ---------- */
+
+.cover{
+
+padding:25px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.top{
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:8px;
+
+letter-spacing:5px;
+
+color:#888;
+
+}
+
+.issue{
+
+position:absolute;
+
+right:20px;
+
+top:80px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:100px;
+
+color:rgba(255,255,255,.05);
+
+}
+
+.photo-wrap{
+
+margin-top:45px;
+
+position:relative;
+
+height:430px;
+
+}
+
+.main-photo{
+
+position:absolute;
+
+right:0;
+
+top:0;
+
+width:260px;
+
+height:380px;
+
+overflow:hidden;
+
+}
+
+.main-photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+filter:contrast(1.1);
+
+}
+
+.photo-border{
+
+position:absolute;
+
+left:20px;
+
+bottom:10px;
+
+width:230px;
+
+height:320px;
+
+border:1px solid #850018;
+
+z-index:-1;
+
+}
+
+.name{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:65px;
+
+font-weight:300;
+
+letter-spacing:14px;
+
+margin-top:15px;
+
+}
+
+.name span{
+
+color:#850018;
+
+}
+
+.subtitle{
+
+font-size:9px;
+
+letter-spacing:6px;
+
+color:#aaa;
+
+margin-top:15px;
+
+text-transform:uppercase;
+
+}
+
+.line{
+
+margin-top:35px;
+
+width:100%;
+
+height:1px;
+
+background:#333;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="texture"></div>
+
+<div class="red-stroke"></div>
+
+<div class="red-square"></div>
+
+<section class="cover">
+
+<div class="top">
+
+<span>VOGUE FRIENDS</span>
+
+<span>NO.04</span>
+
+</div>
+
+<div class="issue">
+
+A
+
+</div>
+
+<div class="photo-wrap">
+
+<div class="main-photo">
+
+<img src="images/anna-main.jpg">
+
+</div>
+
+<div class="photo-border"></div>
+
+</div>
+
+<div class="name">
+
+AN<span>NA</span>
+
+</div>
+
+<div class="subtitle">
+
+SCARLET NOIR · PRIVATE EDITION
+
+</div>
+
+<div class="line"></div>
+
+</section>
+
+<!-- ---------- ARTICLE ---------- -->
+
+<section class="article">
+
+<div class="number">
+
+01 / PERSONAL LETTER
+
+</div>
+
+<h1 class="heading">
+
+FOR
+
+<span class="red-title">
+
+NIKA
+
+</span>
+
+</h1>
+
+<div class="quote-card">
+
+<p>
+
+"Я надеюсь перед тобой 
+откроется весь мир."
+
+</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-big">
+
+<img src="images/anna-photo1.jpg">
+
+</div>
+
+<div class="gallery-small">
+
+<img src="images/anna-photo2.jpg">
+
+</div>
+
+</div>
+
+<div class="letter">
+
+<h2>
+
+LETTER TO NIKA
+
+</h2>
+
+<div class="text">
+
+<p>
+
+Ника, милая, с днем рождения!
+</p>
+
+<p>
+Ты (и остальные наши девочки) — моё лучшее решение в этом году. Я бесконечно рада, что вы появились в моей жизни. Честно, без вас я бы скучала и грустила в разы чаще.
+</p>
+
+<p>
+Ты — та, кто заряжает, смешит и всегда приедет даже в час ночи. Красивая, бойкая, невероятная — и это только малая часть. Пусть всё, что ты задумаешь, сбывается, причём быстро и с бонусом!
+</p>
+
+<p>
+Спасибо, что ты есть. За твои бесконечные шутки, за твой крутой словарный запас (который я бессовестно ворую), за твою энергию и доброту.
+</p>
+
+<p>
+Ника, я желаю тебе самого большого в мире счастья. Всего самого светлого и прекрасного. Ты заслуживаешь весь мир и ещё немного.
+</p>
+
+<p>
+С днем рождения!
+</p>
+
+<p>
+Люблю тебя искренне,
+
+<p>
+твоя Аня.
+</p>
+
+</div>
+
+</section>
+
+<!-- ---------- FINAL ---------- -->
+
+<section class="ending">
+
+<div class="ending-line"></div>
+
+<h2>
+
+WITH
+
+<span>
+
+LOVE, ANNA
+
+</span>
+
+<p>
+
+SCARLET NOIR · PRIVATE EDITION
+
+</p>
+
+<div class="ending-photo">
+
+<img src="images/anna-final.jpg">
+
+</div>
+
+<a href="index.html">
+
+BACK TO NIKA
+
+</a>
+
+</section>
+
+<style>
+
+.article{
+
+padding:60px 25px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.number{
+
+font-size:8px;
+
+letter-spacing:5px;
+
+color:#b8b8b8;
+
+}
+
+.heading{
+
+margin-top:25px;
+
+font-family:'Bodoni Moda',serif;
+
+font-size:50px;
+
+font-weight:300;
+
+line-height:.95;
+
+color:#ffffff;
+
+}
+
+.red-title{
+
+color:#b30024;
+
+}
+
+.quote-card{
+
+margin-top:40px;
+
+padding:25px;
+
+background:#151515;
+
+border-left:3px solid #b30024;
+
+}
+
+.quote-card p{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:22px;
+
+line-height:1.5;
+
+font-style:italic;
+
+color:#ffffff;
+
+}
+
+.gallery{
+
+margin-top:55px;
+
+display:flex;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+.gallery-big{
+
+width:65%;
+
+height:270px;
+
+overflow:hidden;
+
+}
+
+.gallery-small{
+
+width:35%;
+
+height:180px;
+
+overflow:hidden;
+
+margin-top:80px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.letter{
+
+margin-top:60px;
+
+padding:30px 22px;
+
+background:#111111;
+
+border:1px solid #333333;
+
+}
+
+.letter h2{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:30px;
+
+font-weight:300;
+
+margin-bottom:25px;
+
+color:#ffffff;
+
+}
+
+.letter p{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#f2f2f2;
+
+}
+
+.ending{
+
+padding:80px 25px 50px;
+
+text-align:center;
+
+}
+
+.ending-line{
+
+width:80px;
+
+height:1px;
+
+background:#b30024;
+
+margin:0 auto 45px;
+
+}
+
+.ending h2{
+
+font-family:'Bodoni Moda',serif;
+
+font-size:45px;
+
+font-weight:300;
+
+line-height:1.1;
+
+color:#ffffff;
+
+}
+
+.ending h2 span{
+
+color:#b30024;
+
+}
+
+.ending p{
+
+margin-top:25px;
+
+font-size:9px;
+
+letter-spacing:5px;
+
+color:#b8b8b8;
+
+}
+
+.ending-photo{
+
+margin-top:45px;
+
+width:100%;
+
+height:300px;
+
+overflow:hidden;
+
+}
+
+.ending-photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.ending a{
+
+display:block;
+
+margin-top:40px;
+
+padding:18px;
+
+border:1px solid #b30024;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:#ffffff;
+
+font-size:10px;
+
+letter-spacing:5px;
+
+}
+
+</style>
